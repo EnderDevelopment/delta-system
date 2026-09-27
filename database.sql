@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS delta_system (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    player_id INT NOT NULL,
+    value INT NOT NULL,
+    last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+INSERT INTO delta_system (player_id, value) VALUES (1, 100);
